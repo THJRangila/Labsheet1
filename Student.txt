@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Student {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length: ");
+        double length = scanner.nextDouble();
+
+        System.out.print("Enter the breadth: ");
+        double breadth = scanner.nextDouble();
+
+        System.out.println("Length: " + length);
+        System.out.println("Breadth: " + breadth);
+
+        scanner.close(); // Close the scanner to prevent resource leaks
+    }
+}
